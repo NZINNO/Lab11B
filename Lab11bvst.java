@@ -23,9 +23,13 @@ class Deck
 	private String rank[] = {"Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten","Jack","Queen","King","Ace"};
 	private int value[] = {2,3,4,5,6,7,8,9,10,10,10,10,11};
 	public Deck(){
-		
+		public void add(String suit, String rank, int value)
+			{
+			 Card temp = new Card(suit, rank,value);
+			 cards[size] = temp;
+			 size++;
 	}
-
+}
 	public void add(String suit, String rank, int value)
 		{
 		 Card temp = new Card(suit, rank,value);
